@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="博弈论,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -125,18 +125,22 @@
 
 
 
-<meta name="description" content="在谈SG函数之前，我们先看一个关于有向图游戏的定义。   有向图游戏  给定一个有向无环图和一个起始顶点上的一枚棋子，两名选手交替的将这枚棋子沿有向边进行移动，无法移动者判负。  事实上我们可以发现任何一个ICG(公平组合游戏)都可以转化成有向图游戏。具体方法为，把每个局面看成图的一个节点，并且从每个局面向能到达的局面连有向边。 然后我们再来了解一个Mex运算。Mex(minimal exclud">
-<meta name="keywords" content="博弈论">
+<meta name="description" content="Wireshark Lab 0x01-Intro作为此书的第一个Lab，主要介绍了Wireshark的工作原理和基础的使用方法。 实验步骤此处并未严格按照原任务分割，后面题目里的Step编号以修改。 Step 1 Download从官网( http://www.wireshark.org/download.html) 下载，直接安装。 Step 2 选择合适的网卡进行捕获这里我的电脑连接的WIFI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SG函数总结(入门向+简单数学证明)">
-<meta property="og:url" content="http://yoursite.com/2018/07/18/SG函数总结-入门向-简单数学证明/index.html">
+<meta property="og:title" content="Computer-Networking-A-Top-Down-Approach WiresharkLab0x01">
+<meta property="og:url" content="http://yoursite.com/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/index.html">
 <meta property="og:site_name" content="indiewar&#39;s blog">
-<meta property="og:description" content="在谈SG函数之前，我们先看一个关于有向图游戏的定义。   有向图游戏  给定一个有向无环图和一个起始顶点上的一枚棋子，两名选手交替的将这枚棋子沿有向边进行移动，无法移动者判负。  事实上我们可以发现任何一个ICG(公平组合游戏)都可以转化成有向图游戏。具体方法为，把每个局面看成图的一个节点，并且从每个局面向能到达的局面连有向边。 然后我们再来了解一个Mex运算。Mex(minimal exclud">
+<meta property="og:description" content="Wireshark Lab 0x01-Intro作为此书的第一个Lab，主要介绍了Wireshark的工作原理和基础的使用方法。 实验步骤此处并未严格按照原任务分割，后面题目里的Step编号以修改。 Step 1 Download从官网( http://www.wireshark.org/download.html) 下载，直接安装。 Step 2 选择合适的网卡进行捕获这里我的电脑连接的WIFI">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-21T06:03:12.488Z">
+<meta property="og:image" content="http://yoursite.com/images/lab1-1.png">
+<meta property="og:image" content="http://yoursite.com/images/lab1-2.png">
+<meta property="og:image" content="http://yoursite.com/images/lab1-3.png">
+<meta property="og:image" content="http://yoursite.com/images/lab1-4.png">
+<meta property="og:updated_time" content="2020-02-26T15:59:36.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SG函数总结(入门向+简单数学证明)">
-<meta name="twitter:description" content="在谈SG函数之前，我们先看一个关于有向图游戏的定义。   有向图游戏  给定一个有向无环图和一个起始顶点上的一枚棋子，两名选手交替的将这枚棋子沿有向边进行移动，无法移动者判负。  事实上我们可以发现任何一个ICG(公平组合游戏)都可以转化成有向图游戏。具体方法为，把每个局面看成图的一个节点，并且从每个局面向能到达的局面连有向边。 然后我们再来了解一个Mex运算。Mex(minimal exclud">
+<meta name="twitter:title" content="Computer-Networking-A-Top-Down-Approach WiresharkLab0x01">
+<meta name="twitter:description" content="Wireshark Lab 0x01-Intro作为此书的第一个Lab，主要介绍了Wireshark的工作原理和基础的使用方法。 实验步骤此处并未严格按照原任务分割，后面题目里的Step编号以修改。 Step 1 Download从官网( http://www.wireshark.org/download.html) 下载，直接安装。 Step 2 选择合适的网卡进行捕获这里我的电脑连接的WIFI">
+<meta name="twitter:image" content="http://yoursite.com/images/lab1-1.png">
 
 
 
@@ -166,13 +170,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/18/SG函数总结-入门向-简单数学证明/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/">
 
 
 
 
 
-  <title>SG函数总结(入门向+简单数学证明) | indiewar's blog</title>
+  <title>Computer-Networking-A-Top-Down-Approach WiresharkLab0x01 | indiewar's blog</title>
   
 
 
@@ -299,7 +303,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/18/SG函数总结-入门向-简单数学证明/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="indiewar">
@@ -316,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">SG函数总结(入门向+简单数学证明)</h1>
+          <h1 class="post-title" itemprop="name headline">Computer-Networking-A-Top-Down-Approach WiresharkLab0x01</h1>
         
 
         <div class="post-meta">
@@ -328,8 +332,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-18T19:13:06+08:00">
-                2018-07-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-26T23:59:04+08:00">
+                2020-02-26
               </time>
             
 
@@ -339,28 +343,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/algorithm/" itemprop="url" rel="index">
-                    <span itemprop="name">algorithm</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -369,8 +351,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/18/SG函数总结-入门向-简单数学证明/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/07/18/SG函数总结-入门向-简单数学证明/" itemprop="commentCount"></span>
+                <a href="/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -403,36 +385,17 @@
       
 
       
-        <p>在谈SG函数之前，我们先看一个关于有向图游戏的定义。<br>   <strong>有向图游戏</strong></p>
-<blockquote>
-<p>给定一个有向无环图和一个起始顶点上的一枚棋子，两名选手交替的将这枚棋子沿有向边进行移动，无法移动者判负。</p>
-</blockquote>
-<p>事实上我们可以发现<strong>任何一个ICG(公平组合游戏)都可以转化成有向图游戏</strong>。具体方法为，把每个局面看成图的一个节点，并且从每个局面向能到达的局面连有向边。</p>
-<p>然后我们再来了解一个Mex运算。<br><strong>Mex(minimal excludant)运算</strong></p>
-<blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Mex_(mathematics" target="_blank" rel="noopener">Mex wiki</a>)<br>In mathematics, the mex of a subset of a well-ordered set is the smallest value from the whole set that does not belong to the subset. That is, it is the minimum value of the complement set. The name “mex” is shorthand for “minimum excluded” value.</p>
-</blockquote>
-<p>我们这里可以简单点理解，给一个非负整数集合S，mex(S)为求出<strong>不属于集合S</strong>的<strong>最小</strong>非负整数的运算。例如$mex(0,1,2,4,5)=3$、 $mex(2,3,5)=0$、$mex()=0$</p>
-<p>接着就到了本文的核心，SG函数</p>
-<h1 id="SG函数"><a href="#SG函数" class="headerlink" title="SG函数"></a><strong>SG函数</strong></h1><blockquote>
-<p>对于一个给定的有向无环图，定义关于图的每个顶点的SG函数SG如下，<strong>$SG(x)$= $mex$({ $SG(y1)$ ,$SG(y2)$,…,$SG(yk)$})     ($y$是$x$的后继) </strong>。</p>
-</blockquote>
-<p>我们怎么理解这个函数呢？在有向图游戏中，对于每个节点$x$，设从$x$出发共有$k$条有向边，分别到达节点$y1$,$y2$,…,$yk$，$SG(x)$为$x$的后继节点的$SG$函数值构成的集合再执行$mex$运算的结果为该节点$x$的$SG$函数值<br><strong>整个有向图游戏$G$的$SG$函数值被定义为有向图游戏起点的$SG$函数值</strong></p>
-<h2 id="有向图游戏的和"><a href="#有向图游戏的和" class="headerlink" title="有向图游戏的和"></a>有向图游戏的和</h2><blockquote>
-<p><strong>有向图游戏的和的$SG$函数值等于它包含的各个子游戏$SG$函数值的异或值</strong></p>
-</blockquote>
-<h3 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h3><blockquote>
-<p>有向图游戏的某个局面<strong>必胜</strong>，<strong><em>当且仅当</em></strong>该局面对应节点的$SG$函数值大于0<br>有向图游戏的某个局面<strong>必败</strong>，<strong><em>当且仅当</em></strong>该局面对应节点的$SG$函数值等于0</p>
-</blockquote>
-<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem" target="_blank" rel="noopener">Sprague–Grundy_theorem Wiki</a></p>
-</blockquote>
-<p>这里给出一点简单的个人理解：<br> <em>1</em>.在一个<strong>没有出边</strong>的节点$s$上，棋子不能移动，$SG(s)$ $=$ $0$ ,对应P局面</p>
-<p> <em>2</em>.一个节点$k$的$SG$函数值<strong>大于$0$</strong>，则其后继节点必有一个节点$s$的$SG$函数值等于$0$，由1得节点s对应P局面，则当前节点k对应的局面为N局面</p>
-<p> <em>3</em>.一个节点的后继节点$SG$函数值均不为$0$，则该节点的$SG$函数值为$0$。可推出<strong>若一个局面的后继局面全部为N局面，则当前局面为P局面</strong>。</p>
-<p>以下为SimonS大佬的$SG$函数模板</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">define MAX <span class="number">1005</span></span><br><span class="line"><span class="comment">/* 计算从1-n范围内的SG值。</span></span><br><span class="line"><span class="comment">   Array(存储可以走的步数，Array[0]表示可以有多少种走法)</span></span><br><span class="line"><span class="comment">   Array[]需要从小到大排序 */</span></span><br><span class="line"><span class="comment">/*HDU1847博弈SG函数</span></span><br><span class="line"><span class="comment">1.可选步数为1-m的连续整数，直接取模即可，SG(x) = x % (m+1);</span></span><br><span class="line"><span class="comment">2.可选步数为任意步，SG(x) = x;</span></span><br><span class="line"><span class="comment">3.可选步数为一系列不连续的数，用GetSG(计算) */</span></span><br><span class="line"><span class="keyword">int</span> SG[MAX], hash[MAX];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">GetSG</span><span class="params">(<span class="keyword">int</span> Array[],<span class="keyword">int</span> n = MAX<span class="number">-1</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(SG, <span class="number">0</span>, <span class="keyword">sizeof</span>(SG));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= n; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(hash, <span class="number">0</span>, <span class="keyword">sizeof</span>(hash));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= Array[<span class="number">0</span>]; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(i &lt; Array[j])</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            hash[SG[i - Array[j]]] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= n; ++j)</span><br><span class="line">            <span class="keyword">if</span>(!hash[j])</span><br><span class="line">            &#123;</span><br><span class="line">                SG[i] = j;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>*<em>基于lyd的&lt;&lt;算法竞赛进阶指南&gt;&gt;和部分集训队论文写成</em></p>
+        <h1 id="Wireshark-Lab-0x01-Intro"><a href="#Wireshark-Lab-0x01-Intro" class="headerlink" title="Wireshark Lab 0x01-Intro"></a>Wireshark Lab 0x01-Intro</h1><p>作为此书的第一个Lab，主要介绍了Wireshark的工作原理和基础的使用方法。</p>
+<h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><p>此处并未严格按照原任务分割，后面题目里的Step编号以修改。</p>
+<h3 id="Step-1-Download"><a href="#Step-1-Download" class="headerlink" title="Step 1 Download"></a>Step 1 Download</h3><p>从官网( <a href="http://www.wireshark.org/download.html" target="_blank" rel="noopener">http://www.wireshark.org/download.html</a>) 下载，直接安装。</p>
+<h3 id="Step-2-选择合适的网卡进行捕获"><a href="#Step-2-选择合适的网卡进行捕获" class="headerlink" title="Step 2 选择合适的网卡进行捕获"></a>Step 2 选择合适的网卡进行捕获</h3><p>这里我的电脑连接的WIFI，所以选择的是WLAN<br><img src="/images/lab1-1.png" alt="图1-Wireshark捕获"></p>
+<h3 id="Step-3-开始抓包，并输入示例网址"><a href="#Step-3-开始抓包，并输入示例网址" class="headerlink" title="Step 3 开始抓包，并输入示例网址"></a>Step 3 开始抓包，并输入示例网址</h3><p>当Wireshark正在运行时，输入URL：<a href="http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html" target="_blank" rel="noopener">http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html</a> ，并在浏览器中显示该页面。<br><img src="/images/lab1-2.png" alt="图2-浏览器页面"></p>
+<h3 id="Step-4-停止抓包并分析"><a href="#Step-4-停止抓包并分析" class="headerlink" title="Step 4 停止抓包并分析"></a>Step 4 停止抓包并分析</h3><p><img src="/images/lab1-3.png" alt="图3-Wireshark界面"><br>这里简单的介绍一下Wireshark界面的界面。主要分为三层，最上面是Packet List窗口，它列出了所有网络包。在Packet List中选定的网络包会详细地显示在中间的Packet Details窗口中。最底下是Packet Bytes Details窗口。</p>
+<p>这里我们在过滤器输入http。<br><img src="/images/lab1-4.png" alt="图4-http"><br>因为我之前已经访问过一次，所以这里返回的是304，第一次应该为200，当然也可能为其他state。</p>
+<h2 id="问题解答"><a href="#问题解答" class="headerlink" title="问题解答"></a>问题解答</h2><h3 id="1-List-3-different-protocols-that-appear-in-the-protocol-column-in-the-unfiltered-packet-listing-window-in-step-4-above"><a href="#1-List-3-different-protocols-that-appear-in-the-protocol-column-in-the-unfiltered-packet-listing-window-in-step-4-above" class="headerlink" title="1.List 3 different protocols that appear in the protocol column in the unfiltered packet-listing window in step 4 above"></a>1.List 3 different protocols that appear in the protocol column in the unfiltered packet-listing window in step 4 above</h3><p>Packet List窗口中3种不同的协议，直接在protocol栏寻找即可。<br>Answer：TCP,UDP,OICQ</p>
+<h3 id="2-How-long-did-it-take-from-when-the-HTTP-GET-message-was-sent-until-the-HTTP-OK-reply-was-received"><a href="#2-How-long-did-it-take-from-when-the-HTTP-GET-message-was-sent-until-the-HTTP-OK-reply-was-received" class="headerlink" title="2.How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received?"></a>2.How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received?</h3><p>从发送 HTTP GET 消息到收到 HTTP OK 回复需要的时间<br>Answer = 3.036706-2.763368 s </p>
+<h3 id="3-What-is-the-Internet-address-of-the-gaia-cs-umass-edu-also-known-as-wwwnet-cs-umass-edu-What-is-the-Internet-address-of-your-computer"><a href="#3-What-is-the-Internet-address-of-the-gaia-cs-umass-edu-also-known-as-wwwnet-cs-umass-edu-What-is-the-Internet-address-of-your-computer" class="headerlink" title="3.What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)?  What is the Internet address of your computer?"></a>3.What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)?  What is the Internet address of your computer?</h3><p>直接看Source栏和Destination栏<br>Answer ：128.119.245.12 ，192.168.124.9</p>
+<h3 id="4-Print-the-two-HTTP-messages-GET-and-OK-referred-to-in-question-2-above-To-do-so-select-Print-from-the-Wireshark-File-command-menu-and-select-the-“Selected-Packet-Only”-and-“Print-as-displayed”-radial-buttons-and-then-click-OK"><a href="#4-Print-the-two-HTTP-messages-GET-and-OK-referred-to-in-question-2-above-To-do-so-select-Print-from-the-Wireshark-File-command-menu-and-select-the-“Selected-Packet-Only”-and-“Print-as-displayed”-radial-buttons-and-then-click-OK" class="headerlink" title="4.Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK."></a>4.Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK.</h3><p>打印出上面问题中提到的两条 HTTP 消息，这里就不演示了。</p>
 
       
     </div>
@@ -448,12 +411,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/博弈论/" rel="tag"># 博弈论</a>
-          
-        </div>
-      
 
       
       
@@ -463,15 +420,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/01/21/new-start/" rel="next" title="new start">
+                <i class="fa fa-chevron-left"></i> new start
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/31/智商恢复训练-中位数/" rel="prev" title="智商恢复训练(中位数)">
-                智商恢复训练(中位数) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -638,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SG函数"><span class="nav-number">1.</span> <span class="nav-text">SG函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#有向图游戏的和"><span class="nav-number">1.1.</span> <span class="nav-text">有向图游戏的和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定理"><span class="nav-number">1.1.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明"><span class="nav-number">1.1.2.</span> <span class="nav-text">证明</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Wireshark-Lab-0x01-Intro"><span class="nav-number">1.</span> <span class="nav-text">Wireshark Lab 0x01-Intro</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实验步骤"><span class="nav-number">1.1.</span> <span class="nav-text">实验步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-1-Download"><span class="nav-number">1.1.1.</span> <span class="nav-text">Step 1 Download</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2-选择合适的网卡进行捕获"><span class="nav-number">1.1.2.</span> <span class="nav-text">Step 2 选择合适的网卡进行捕获</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-3-开始抓包，并输入示例网址"><span class="nav-number">1.1.3.</span> <span class="nav-text">Step 3 开始抓包，并输入示例网址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-4-停止抓包并分析"><span class="nav-number">1.1.4.</span> <span class="nav-text">Step 4 停止抓包并分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解答"><span class="nav-number">1.2.</span> <span class="nav-text">问题解答</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-List-3-different-protocols-that-appear-in-the-protocol-column-in-the-unfiltered-packet-listing-window-in-step-4-above"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.List 3 different protocols that appear in the protocol column in the unfiltered packet-listing window in step 4 above</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-How-long-did-it-take-from-when-the-HTTP-GET-message-was-sent-until-the-HTTP-OK-reply-was-received"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-What-is-the-Internet-address-of-the-gaia-cs-umass-edu-also-known-as-wwwnet-cs-umass-edu-What-is-the-Internet-address-of-your-computer"><span class="nav-number">1.2.3.</span> <span class="nav-text">3.What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)?  What is the Internet address of your computer?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Print-the-two-HTTP-messages-GET-and-OK-referred-to-in-question-2-above-To-do-so-select-Print-from-the-Wireshark-File-command-menu-and-select-the-“Selected-Packet-Only”-and-“Print-as-displayed”-radial-buttons-and-then-click-OK"><span class="nav-number">1.2.4.</span> <span class="nav-text">4.Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK.</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -828,9 +785,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/07/18/SG函数总结-入门向-简单数学证明/';
-          this.page.identifier = '2018/07/18/SG函数总结-入门向-简单数学证明/';
-          this.page.title = 'SG函数总结(入门向+简单数学证明)';
+          this.page.url = 'http://yoursite.com/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/';
+          this.page.identifier = '2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/';
+          this.page.title = 'Computer-Networking-A-Top-Down-Approach WiresharkLab0x01';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://indiewar.disqus.com/embed.js';

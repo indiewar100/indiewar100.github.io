@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-21T06:53:50.067Z</updated>
+  <updated>2020-02-26T15:59:36.946Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Computer-Networking-A-Top-Down-Approach WiresharkLab0x01</title>
+    <link href="http://yoursite.com/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/"/>
+    <id>http://yoursite.com/2020/02/26/Computer-Networking-A-Top-Down-Approach-WiresharkLab0x01/</id>
+    <published>2020-02-26T15:59:04.000Z</published>
+    <updated>2020-02-26T15:59:36.946Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Wireshark-Lab-0x01-Intro"><a href="#Wireshark-Lab-0x01-Intro" class="headerlink" title="Wireshark Lab 0x01-Intro"></a>Wireshark Lab 0x01-Intro</h1><p>作为此书的第一个Lab，主要介绍了Wireshark的工作原理和基础的使用方法。</p><h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><p>此处并未严格按照原任务分割，后面题目里的Step编号以修改。</p><h3 id="Step-1-Download"><a href="#Step-1-Download" class="headerlink" title="Step 1 Download"></a>Step 1 Download</h3><p>从官网( <a href="http://www.wireshark.org/download.html" target="_blank" rel="noopener">http://www.wireshark.org/download.html</a>) 下载，直接安装。</p><h3 id="Step-2-选择合适的网卡进行捕获"><a href="#Step-2-选择合适的网卡进行捕获" class="headerlink" title="Step 2 选择合适的网卡进行捕获"></a>Step 2 选择合适的网卡进行捕获</h3><p>这里我的电脑连接的WIFI，所以选择的是WLAN<br><img src="/images/lab1-1.png" alt="图1-Wireshark捕获"></p><h3 id="Step-3-开始抓包，并输入示例网址"><a href="#Step-3-开始抓包，并输入示例网址" class="headerlink" title="Step 3 开始抓包，并输入示例网址"></a>Step 3 开始抓包，并输入示例网址</h3><p>当Wireshark正在运行时，输入URL：<a href="http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html" target="_blank" rel="noopener">http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html</a> ，并在浏览器中显示该页面。<br><img src="/images/lab1-2.png" alt="图2-浏览器页面"></p><h3 id="Step-4-停止抓包并分析"><a href="#Step-4-停止抓包并分析" class="headerlink" title="Step 4 停止抓包并分析"></a>Step 4 停止抓包并分析</h3><p><img src="/images/lab1-3.png" alt="图3-Wireshark界面"><br>这里简单的介绍一下Wireshark界面的界面。主要分为三层，最上面是Packet List窗口，它列出了所有网络包。在Packet List中选定的网络包会详细地显示在中间的Packet Details窗口中。最底下是Packet Bytes Details窗口。</p><p>这里我们在过滤器输入http。<br><img src="/images/lab1-4.png" alt="图4-http"><br>因为我之前已经访问过一次，所以这里返回的是304，第一次应该为200，当然也可能为其他state。</p><h2 id="问题解答"><a href="#问题解答" class="headerlink" title="问题解答"></a>问题解答</h2><h3 id="1-List-3-different-protocols-that-appear-in-the-protocol-column-in-the-unfiltered-packet-listing-window-in-step-4-above"><a href="#1-List-3-different-protocols-that-appear-in-the-protocol-column-in-the-unfiltered-packet-listing-window-in-step-4-above" class="headerlink" title="1.List 3 different protocols that appear in the protocol column in the unfiltered packet-listing window in step 4 above"></a>1.List 3 different protocols that appear in the protocol column in the unfiltered packet-listing window in step 4 above</h3><p>Packet List窗口中3种不同的协议，直接在protocol栏寻找即可。<br>Answer：TCP,UDP,OICQ</p><h3 id="2-How-long-did-it-take-from-when-the-HTTP-GET-message-was-sent-until-the-HTTP-OK-reply-was-received"><a href="#2-How-long-did-it-take-from-when-the-HTTP-GET-message-was-sent-until-the-HTTP-OK-reply-was-received" class="headerlink" title="2.How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received?"></a>2.How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received?</h3><p>从发送 HTTP GET 消息到收到 HTTP OK 回复需要的时间<br>Answer = 3.036706-2.763368 s </p><h3 id="3-What-is-the-Internet-address-of-the-gaia-cs-umass-edu-also-known-as-wwwnet-cs-umass-edu-What-is-the-Internet-address-of-your-computer"><a href="#3-What-is-the-Internet-address-of-the-gaia-cs-umass-edu-also-known-as-wwwnet-cs-umass-edu-What-is-the-Internet-address-of-your-computer" class="headerlink" title="3.What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)?  What is the Internet address of your computer?"></a>3.What is the Internet address of the gaia.cs.umass.edu (also known as wwwnet.cs.umass.edu)?  What is the Internet address of your computer?</h3><p>直接看Source栏和Destination栏<br>Answer ：128.119.245.12 ，192.168.124.9</p><h3 id="4-Print-the-two-HTTP-messages-GET-and-OK-referred-to-in-question-2-above-To-do-so-select-Print-from-the-Wireshark-File-command-menu-and-select-the-“Selected-Packet-Only”-and-“Print-as-displayed”-radial-buttons-and-then-click-OK"><a href="#4-Print-the-two-HTTP-messages-GET-and-OK-referred-to-in-question-2-above-To-do-so-select-Print-from-the-Wireshark-File-command-menu-and-select-the-“Selected-Packet-Only”-and-“Print-as-displayed”-radial-buttons-and-then-click-OK" class="headerlink" title="4.Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK."></a>4.Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK.</h3><p>打印出上面问题中提到的两条 HTTP 消息，这里就不演示了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Wireshark-Lab-0x01-Intro&quot;&gt;&lt;a href=&quot;#Wireshark-Lab-0x01-Intro&quot; class=&quot;headerlink&quot; title=&quot;Wireshark Lab 0x01-Intro&quot;&gt;&lt;/a&gt;Wireshark Lab 
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>new start</title>
